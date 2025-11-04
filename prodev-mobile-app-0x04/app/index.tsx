@@ -24,7 +24,7 @@ export default function Index() {
             <View style={styles.companyLogo}>
               <Image source={require('@/assets/images/logo.png')} />
             </View>
-            assets/images/logo.png
+
             {/*prettier-ignore */}
             <View style={styles.textGroup}>
               <Text style={styles.textLarge}>Find your favorite place here</Text>
