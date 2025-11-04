@@ -8,7 +8,6 @@ import {
   ScrollView,
   Dimensions,
   TouchableHighlight,
-  StyleSheet,
 } from 'react-native';
 import { FILTERS, SAMPLE_DATA } from '@/constants/data';
 import { styles } from '@/styles/_homestyle';
@@ -23,7 +22,7 @@ const Home = () => {
           <View style={styles.searchControlGroup}>
             <Text style={styles.searchFormText}>Where to?</Text>
             <TextInput
-              style={{ ...styles.searchControl, ...styles.searchFormText }}
+              style={{ ...styles.searchControl }}
               placeholder='Location . Date . Add guest'
             />
           </View>
