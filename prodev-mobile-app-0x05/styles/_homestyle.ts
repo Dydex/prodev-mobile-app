@@ -3,7 +3,7 @@ import { StyleSheet } from 'react-native';
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#f5f5f5',
+    backgroundColor: '#efefefff',
   },
   searchGroup: {
     padding: 16,
@@ -42,12 +42,12 @@ const styles = StyleSheet.create({
   },
   filterGroup: {
     flexDirection: 'row',
-    // padding: 12,
+    paddingVertical: 10,
+
+    height: 72,
   },
   filterContainer: {
     width: 100,
-    height: 72,
-
     alignItems: 'center',
     justifyContent: 'center',
     backgroundColor: '#ffffff',

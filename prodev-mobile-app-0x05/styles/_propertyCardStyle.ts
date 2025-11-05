@@ -2,19 +2,26 @@ import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
   container: {
-    height: 400,
     borderRadius: 10,
     overflow: 'hidden',
-    marginBottom: 16,
+    height: '100%',
   },
   overlay: {
     height: 400,
-    backgroundColor: 'rgba(0,0,0,0.3)',
-    padding: 16,
+    backgroundColor: '#fff',
+    borderRadius: 10,
+    padding: 8,
     justifyContent: 'space-between',
+    marginTop: 10,
   },
+  overlaytwo: {
+    flex: 1,
+  },
+
   favoriteGroup: {
     alignItems: 'flex-end',
+    marginRight: 10,
+    marginTop: 14,
   },
   favoriteOverlay: {
     backgroundColor: 'rgba(0,0,0,0.4)',
@@ -68,7 +75,7 @@ const styles = StyleSheet.create({
   group: {
     position: 'absolute',
     bottom: 30,
-    left: 30,
+    left: 10,
   },
 });
 
