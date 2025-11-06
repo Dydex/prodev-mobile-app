@@ -1,4 +1,5 @@
-import PropertyListing from '@/components/PropertyListing';
+import PropertyListing from '../../components/PropertyListing/index';
+import { styles } from '../../styles/_homestyle';
 import { Feather } from '@expo/vector-icons';
 import {
   View,
@@ -9,10 +10,7 @@ import {
   Dimensions,
   TouchableHighlight,
 } from 'react-native';
-import { FILTERS, SAMPLE_DATA } from '@/constants/data';
-import { styles } from '@/styles/_homestyle';
-
-const windowWidth = Dimensions.get('window').width;
+import { FILTERS, SAMPLE_DATA } from '../../constants/data';
 
 const Home = () => {
   return (
@@ -22,7 +20,7 @@ const Home = () => {
           <View style={styles.searchControlGroup}>
             <Text style={styles.searchFormText}>Where to?</Text>
             <TextInput
-              style={{ ...styles.searchControl }}
+              style={{ ...styles.searchControl, ...styles.searchFormText }}
               placeholder='Location . Date . Add guest'
             />
           </View>
@@ -46,7 +44,7 @@ const Home = () => {
                   style={{
                     flex: 1,
                   }}
-                  source={require('@/assets/logos/mansion 1.png')}
+                  source={require('@/assets/images/mansion.png')}
                   resizeMode='contain'
                 />
                 <Text>{filter}</Text>
